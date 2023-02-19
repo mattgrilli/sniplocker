@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Snipper - Code Snippet Manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Snip Locker</h1>
+    <p align="center">A simple code snippet manager</p>
+    
+    
+    <center>
+      <button id="toggle-form-button" class="toggle-form-button" title="add new snippet">+</button>
+  </center>
+    
+    
+    
+    
+    <form id="search-form">
+      <input type="text" id="search-term" placeholder="Search snippets...">
+      
+    </form>
+
+
+    <form id="snippet-form" class="hidden">
+      <h2>Add a New Snippet</h2>
+      <label for="snippet-name">Name*</label>
+      <input type="text" id="snippet-name" name="snippet-name" required>
+      <label for="snippet-code">Code*</label>
+      <textarea id="snippet-code" name="snippet-code" class="code-textarea" required></textarea>
+      <label for="snippet-tags">Tags (comma-separated)*</label>
+      <input type="text" id="snippet-tags" name="snippet-tags" required>
+      <br>
+      <div class="form-buttons">
+        <button id="add-snippet-button" type="submit">Add Snippet</button>
+      
+      </div>
+    </form>
+    
+    
+    
+  
+    
+    <h2>Saved Snippets</h2>
+    <div id="tag-filter-description"></div>
+
+    <ul id="snippet-list">
+      <!-- Display saved snippets here -->
+    </ul>
+    
+    <script src="jumble.js"></script>
+  </body>
+</html>
+
+
