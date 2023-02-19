@@ -10,3 +10,4 @@ Features:
 - Saved snippets can be edited and changed.
 - Snippets can be filtered by tags.
 
+![preview](https://github.com/mattgrilli/sniplocker/blob/master/sniplocker.png?raw=true)
