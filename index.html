@@ -6,43 +6,53 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Snip Locker</h1>
-    <p align="center">A simple code snippet manager</p>
-    
-    
-    <center>
+
+    <header>
+      <div class="header-title">
+        <h1>Snippet Manager</h1>
+        <p>A simple code snippet manager</p>
+      </div>
+      <form id="search-form">
+        <input type="text" id="search-term" placeholder="Search snippets...">
+      </form>
       <button id="toggle-form-button" class="toggle-form-button" title="add new snippet">+</button>
-  </center>
+    </header>
     
     
     
     
-    <form id="search-form">
-      <input type="text" id="search-term" placeholder="Search snippets...">
-      
-    </form>
-
-
-    <form id="snippet-form" class="hidden">
+      <form id="snippet-form" class="hidden">
       <h2>Add a New Snippet</h2>
-      <label for="snippet-name">Name*</label>
+      <p><span class="required">* Required</p></span>
+    
+   
+    
+      <label for="snippet-name"><span class="required">*</span> Name</label>
       <input type="text" id="snippet-name" name="snippet-name" required>
-      <label for="snippet-code">Code*</label>
+      <label for="snippet-desc"><span class="required">*</span> Description</label>
+      <textarea id="snippet-desc" name="snippet-desc" class="snippet-desc" required></textarea>
+
+      <label for="snippet-code"><span class="required">*</span> Code</label>
       <textarea id="snippet-code" name="snippet-code" class="code-textarea" required></textarea>
-      <label for="snippet-tags">Tags (comma-separated)*</label>
+      <label for="snippet-tags"><span class="required">*</span> Tags (comma-separated)</label>
       <input type="text" id="snippet-tags" name="snippet-tags" required>
       <br>
       <div class="form-buttons">
         <button id="add-snippet-button" type="submit">Add Snippet</button>
-      
+        
       </div>
+      
     </form>
     
     
     
   
     
-    <h2>Saved Snippets</h2>
+    
+    
+    
+    
+    <h2>Snippet List</h2>
     <div id="tag-filter-description"></div>
 
     <ul id="snippet-list">
