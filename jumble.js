@@ -101,7 +101,7 @@ function createSnippetItem(snippet, snippetList) {
   snippetDescription.textContent = snippet.description;
 
   const snippetCopyButton = document.createElement('button');
-  snippetCopyButton.textContent = '🗐';
+  snippetCopyButton.textContent = '📋';
   snippetCopyButton.classList.add('copy-button');
   snippetCopyButton.addEventListener('click', function() {
     navigator.clipboard.writeText(snippet.code);
